@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="YONGHUI" parallel="false" verbose="5">
+	<parameter name="excelPath" value="D:/MyData/TANFY3/Desktop/TestCases.xlsx" />
+	<parameter name="PosExcelPath" value="D:/MyData/TANFY3/Desktop/PosCases.xlsx" />
+
+	<test name="Position">
+		<classes>
+			<class name="posCase.ZzSetUp">
+				<parameter name="sheetAt" value="0" />
+				<parameter name="ZzCaseStartRow" value="3" />
+				<parameter name="ZzCaseEndRow" value="17" />
+				<methods>
+					<include name="ZzCase"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="orgnization">
+		<classes>
+			<class name="orgCase.OrgTest">
+			</class>
+		</classes>
+	</test>
+
+	<test name="Employee">
+		<classes>
+			<class name="empCase.EmpChangeSurety">
+				<parameter name="sheetAt" value="0" />
+				<parameter name="case1StartRow" value="3" />
+				<parameter name="case1EndRow" value="20" />
+				<parameter name="case2StartRow" value="23" />
+				<parameter name="case2EndRow" value="24" />
+				<methods>
+					<exclude name="case1"></exclude>
+					<exclude name="case2"></exclude>
+				</methods>
+			</class>
+
+			<class name="empCase.EmpEntry">
+				<parameter name="sheetAt" value="1" />
+				<parameter name="case3StartRow" value="109" />
+				<parameter name="case3EndRow" value="189" />
+				<methods>
+					<exclude name="case3"></exclude>
+				</methods>
+			</class>
+
+		</classes>
+	</test>
+
+	<listeners>
+		<listener class-name="listener.ScreenshotListener" />
+		<!-- <listener class-name="listener.RetryListener" /> <listener class-name="listener.RetryOnfinishListener" 
+			/> -->
+
+		<!-- <listener class-name="org.uncommons.reportng.HTMLReporter"/> <listener 
+			class-name="org.uncommons.reportng.JUnitXMLReporter"/> -->
+	</listeners>
+
+</suite>
