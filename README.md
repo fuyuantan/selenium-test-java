@@ -15,4 +15,6 @@ listener class-name="listener.RetryOnfinishListener" 的注解，即可使用，
 5.ReportNG测试报告在test-output文件中，为.html文件
 
 设计思想：
-测试用例编写在Excel中，对Excel进行POI操作，导入测试操作，对Chrome浏览器进行自动化测试。
+测试用例编写在Excel中，对Excel进行POI操作，导入测试操作，在Chrome浏览器进行自动化测试。
+
+联系：wechat:605300432
