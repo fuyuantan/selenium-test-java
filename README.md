@@ -1,4 +1,4 @@
-# seleniumTest
+# selenium-java
 Java+Selenium+TestNG
 
 1.Maven项目，import exist maven project导入
@@ -17,4 +17,4 @@ listener class-name="listener.RetryOnfinishListener" 的注解，即可使用，
 设计思想：
 测试用例编写在Excel中，对Excel进行POI操作，导入测试操作，在Chrome浏览器进行自动化测试。
 
-联系：wechat:605300432
+Email: tanfy.cs@gmail.com
