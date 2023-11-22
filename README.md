@@ -2,6 +2,7 @@
 Java + Selenium + TestNG
 
 startup:
+
 1.Maven projects: import by selecting "import existing Maven project";
 
 2.Integrated with ReportNG. To use it, remove the annotations for listener: class-name="listener.RetryListener" and listener: class-name="listener.RetryOnfinishListener" in the testng.xml. NOT recommended; and which just provided a implementation method;
@@ -15,7 +16,8 @@ startup:
 design philosophy:
 Test cases are wrote in Excel, and using POI to operate the Excel for importing the testing operations. Meanwhile, the automated testing is conducted on the Chrome browser.
 
-运行启动：
+启动：
+
 1.Maven 项目: import exist maven project 导入；
 
 2.整合了 ReportNG，如需使用，除去 testng.xml 中 listener class-name="listener.RetryListener"
