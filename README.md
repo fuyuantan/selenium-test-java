@@ -16,6 +16,9 @@ startup:
 design philosophy:
 Test cases are wrote in Excel, and using POI to operate the Excel for importing the testing operations. Meanwhile, the automated testing is conducted on the Chrome browser.
 
+
+
+
 启动：
 
 1.Maven 项目: import exist maven project 导入；
