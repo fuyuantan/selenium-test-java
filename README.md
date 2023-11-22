@@ -1,4 +1,4 @@
-# selenium-java
+# selenium-test-java
 Java + Selenium + TestNG
 
 startup:
